@@ -1,10 +1,11 @@
-print(my_bot.get_responce("hi))
-how do you do?
-print(my_bot.get_responce("I feel awesome today"))
-excellent, glad to hear that
-print(my_bot.get_responce("what is your name"))
-I am spark . ask me a math question
-print(my_bot.get_responce("show me the pythogorean theorem"))
-A squared plus B squared is equal to C squared 
-print(my_bot.get_responce(" do you know the laws of cosines"))
-c**2=a**2+b**2-2*a*b*cos(gamma)
+def chatbot():
+    print("Hello! I'm a simple chatbot. How can I assist you today?")
+    user_input = input("User: ")
+    if "hello" in user_input.lower():
+        print("Chatbot: Hello! How can I help you today?")
+    elif "bye" in user_input.lower():
+        print("Chatbot: Goodbye! Have a great day!")
+    else:
+        print("Chatbot: Sorry, I didn't understand that. Can you please rephrase?")
+
+chatbot()
